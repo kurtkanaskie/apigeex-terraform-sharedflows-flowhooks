@@ -1,0 +1,13 @@
+<SharedFlowBundle revision="2" name="tf-cors-any-v1">
+    <DisplayName></DisplayName>
+    <Description>This was updated locally after being used in tf-pre-proxy-v1 used in Flow Hook, lifecycle is required on deployment resource</Description>
+    <CreatedAt>1682532925227</CreatedAt>
+    <LastModifiedAt>1682532925227</LastModifiedAt>
+    <Policies>
+        <Policy>CORS-any</Policy>
+    </Policies>
+    <SharedFlows>
+        <SharedFlow>default</SharedFlow>
+    </SharedFlows>
+    <subType>SharedFlow</subType>
+</SharedFlowBundle>

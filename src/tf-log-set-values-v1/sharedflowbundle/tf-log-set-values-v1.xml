@@ -1,0 +1,17 @@
+<SharedFlowBundle revision="74" name="tf-log-set-values-v1">
+    <DisplayName>tf-log-set-values-v1</DisplayName>
+    <Description>Terraform using log-set-values-v1</Description>
+    <CreatedAt>1679692689719</CreatedAt>
+    <LastModifiedAt>1679692724261</LastModifiedAt>
+    <Policies>
+        <Policy>KV-log-config</Policy>
+        <Policy>JS-set-log-values</Policy>
+    </Policies>
+    <Resources>
+        <Resource>jsc://JS-set-log-values.js</Resource>
+    </Resources>
+    <SharedFlows>
+        <SharedFlow>default</SharedFlow>
+    </SharedFlows>
+    <subType>SharedFlow</subType>
+</SharedFlowBundle>

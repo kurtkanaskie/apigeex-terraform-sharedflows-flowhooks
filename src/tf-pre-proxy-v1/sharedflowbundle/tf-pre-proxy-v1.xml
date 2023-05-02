@@ -1,0 +1,14 @@
+<SharedFlowBundle revision="5" name="tf-pre-proxy-v1">
+    <DisplayName></DisplayName>
+    <Description></Description>
+    <CreatedAt>1682521304053</CreatedAt>
+    <LastModifiedAt>1682521373942</LastModifiedAt>
+    <Policies>
+        <Policy>FC-tf-log-set-values-v1</Policy>
+        <Policy>FC-tf-cors-any-v1</Policy>
+    </Policies>
+    <SharedFlows>
+        <SharedFlow>default</SharedFlow>
+    </SharedFlows>
+    <subType>SharedFlow</subType>
+</SharedFlowBundle>
