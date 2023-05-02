@@ -51,14 +51,18 @@ done
 tf-cors-any-v1
 tf-log-cloud-logging-sc-v1 # used by individual proxies in PostClientFlow, uses variables set by tf-log-set-values-v1
 tf-log-set-values-v1
-tf-pre-proxy-v1
+
+--> tf-pre-proxy-v1
 	tf-cors-any-v1
 	tf-log-set-values-v1
-tf-pre-target-v1
-	tf-log-set-values-v1
-tf-post-target-v1
-	tf-log-set-values-v1
-tf-post-proxy-v1
+
+	--> tf-pre-target-v1
+		tf-log-set-values-v1
+
+	<-- tf-post-target-v1
+		tf-log-set-values-v1
+
+<--tf-post-proxy-v1
 	tf-log-set-values-v1
 ```
 
