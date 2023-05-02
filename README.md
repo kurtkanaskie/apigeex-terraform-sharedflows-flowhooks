@@ -62,7 +62,7 @@ tf-log-set-values-v1
 	<-- tf-post-target-v1
 		tf-log-set-values-v1
 
-<--tf-post-proxy-v1
+<-- tf-post-proxy-v1
 	tf-log-set-values-v1
 ```
 
