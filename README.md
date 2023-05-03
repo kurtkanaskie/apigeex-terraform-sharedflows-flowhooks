@@ -6,6 +6,7 @@ Clone this repository.
 ```
 gcloud auth application-default login
 terraform init
+./package.sh # Update all zips from source
 terraform plan -var='project_id=apigeex-org-name' -var='env=test'
 terraform plan -var='project_id=apigeex-org-name' -var='env=test'
 ```
@@ -35,7 +36,7 @@ src
 1. terraform plan -var='project_id=apigeex-org-name' -var='env=test'
 1. terraform apply -var='project_id=apigeex-org-name' -var='env=test'
 
-Update all zips after multiple edits
+Update all zips after multiple edits using `package.sh`
 ```
 for sf in `ls src`
 do
