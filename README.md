@@ -6,9 +6,8 @@ Clone this repository.
 ```
 gcloud auth application-default login
 terraform init
-./package.sh # Update all zips from source
 terraform plan -var='project_id=apigeex-org-name' -var='env=test'
-terraform plan -var='project_id=apigeex-org-name' -var='env=test'
+terraform apply -var='project_id=apigeex-org-name' -var='env=test'
 ```
 
 ## Overview
@@ -25,7 +24,7 @@ src
 			sharedflows
 				default.xml
 			sf-name.xml
-		sf-name.zip
+	sf-name.zip
 ```
 
 **Process for each shared flow**
@@ -71,7 +70,6 @@ tf-log-set-values-v1
 ```
 tree .
 .
-├── HOW_TO.txt
 ├── apigeex-org-name.tfvars
 ├── main.tf
 ├── src
@@ -150,7 +148,7 @@ tree .
 
     Using Terraform for proxies / shared flows is not really a good use case for Terraform.
 
-    This results in the shared flows being undeployed from test. Perhaps I need seperate deployment resources for each environment.
+    This results in the shared flows being undeployed from test. Perhaps I need separate deployment resources for each environment.
 
     ```
     terraform plan -var='project_id=apigeex-org-name' -var='env=test'
@@ -158,7 +156,7 @@ tree .
     ```
 3. Race conditions with deployments and assignment to Flow Hook.
 
-    On full build frrom scratch, assigning the SF to the FH may fail because the SF is not depoloyed.
+    On full build frrom scratch, assigning the SF to the FH may fail because the SF is not deployed.
 
 	Just run again.
 
