@@ -122,11 +122,11 @@ tree .
 
     gcloud auth application-default login
 
-2. How to use for multiple envs and run for each seperately?
+2. How to use for multiple envs and run for each separately?
 
     Using Terraform for proxies / shared flows is not really a good use case for Terraform.
 
-    This results in the shared flows being undeployed from test. Perhaps I need separate deployment resources for each environment.
+    If I try to deploy to "prod" it results in the shared flows being un-deployed from "test". Perhaps I need separate deployment resources for each environment.
 
     ```
     terraform plan -var='project_id=apigeex-org-name' -var='env=test'
@@ -134,7 +134,7 @@ tree .
     ```
 3. Race conditions with deployments and assignment to Flow Hook.
 
-    On full build frrom scratch, assigning the SF to the FH may fail because the SF is not deployed.
+    On full build from scratch, assigning the SF to the FH may fail because the SF is not deployed.
 
 	Just run again.
 
