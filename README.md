@@ -14,7 +14,8 @@ terraform apply -var='project_id=apigeex-org-name' -var='env=test'
 
 [Apigee Terraform Modules](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/apigee_sharedflow)
 
-Directory structure after plan and apply. "archive_file" module creates zipfile at same level as shared flow.
+Directory structure after plan and apply. \
+data "archive_file" module creates zipfile at same level as shared flow.
 ```
 src
 	sf-name
